@@ -1,0 +1,78 @@
+{
+  "catalogue_version": "2026.10.1",
+  "jurisdiction": "European Union",
+  "controls": [
+    {
+      "id": "GDPR-LAW-001",
+      "framework": "GDPR",
+      "legal_reference": "Article 6",
+      "title": "Lawful basis",
+      "description": "A documented lawful basis exists for personal-data processing.",
+      "applies_to": ["personal_data"],
+      "severity": "critical",
+      "weight": 10,
+      "evidence_expected": ["lawful-basis assessment", "ROPA entry"],
+      "remediation": "Identify and document the applicable lawful basis before processing personal data."
+    },
+    {
+      "id": "GDPR-TRANSP-001",
+      "framework": "GDPR",
+      "legal_reference": "Articles 12-14",
+      "title": "Transparency information",
+      "description": "Individuals receive clear information about how their personal data is processed.",
+      "applies_to": ["personal_data"],
+      "severity": "high",
+      "weight": 8,
+      "evidence_expected": ["privacy notice", "layered transparency notice"],
+      "remediation": "Provide clear, accessible privacy information covering the relevant processing."
+    },
+    {
+      "id": "GDPR-DPIA-001",
+      "framework": "GDPR",
+      "legal_reference": "Article 35",
+      "title": "DPIA screening",
+      "description": "DPIA screening is documented and a DPIA is completed where required.",
+      "applies_to": ["personal_data"],
+      "severity": "critical",
+      "weight": 10,
+      "evidence_expected": ["DPIA", "screening record", "risk assessment"],
+      "remediation": "Document DPIA screening and conduct a DPIA where the processing is likely to result in high risk."
+    },
+    {
+      "id": "AI-RM-001",
+      "framework": "EU AI Act",
+      "legal_reference": "Article 9",
+      "title": "AI risk management",
+      "description": "A documented and iterative risk-management process exists.",
+      "applies_to": ["potential_high_risk"],
+      "severity": "critical",
+      "weight": 10,
+      "evidence_expected": ["risk-management policy", "risk register", "review records"],
+      "remediation": "Establish and maintain a documented AI risk-management process."
+    },
+    {
+      "id": "AI-HO-001",
+      "framework": "EU AI Act",
+      "legal_reference": "Article 14",
+      "title": "Human oversight",
+      "description": "Effective human-oversight measures exist for relevant AI use.",
+      "applies_to": ["potential_high_risk"],
+      "severity": "critical",
+      "weight": 10,
+      "evidence_expected": ["oversight procedure", "named reviewer", "override mechanism"],
+      "remediation": "Define human-oversight responsibilities, intervention rights, and override procedures."
+    },
+    {
+      "id": "AI-TRANS-001",
+      "framework": "EU AI Act",
+      "legal_reference": "Article 50",
+      "title": "AI transparency",
+      "description": "Applicable transparency obligations are identified and implemented.",
+      "applies_to": ["general", "potential_high_risk"],
+      "severity": "high",
+      "weight": 8,
+      "evidence_expected": ["user disclosure", "content labelling procedure"],
+      "remediation": "Implement the transparency and disclosure measures applicable to the AI use case."
+    }
+  ]
+}
